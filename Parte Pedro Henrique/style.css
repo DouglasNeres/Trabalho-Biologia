@@ -1,0 +1,112 @@
+/*pode mudar a cor das letras se achar que não ta legal*/
+
+body {
+    font-size: 100%;
+    background: linear-gradient(45deg, #2F5D62, #5E8B7E, #A7C4BC, #DFEEEA);
+    background-size: 300% 300%;
+    /*animation: colors 10s ease-in-out infinite;*/
+
+}
+
+/* degrade do teu codigo sem animação */
+@keyframes colors {
+    0% {
+        background: linear-gradient(45deg, #2F5D62, #5E8B7E, #A7C4BC, #DFEEEA);
+    }
+
+    50% {
+        background: linear-gradient(45deg, #2F5D62, #5E8B7E, #A7C4BC, #DFEEEA);
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+.menu {
+    width: 100%;
+    height: 65px;
+}
+
+.logo {
+    width: 65px;
+    
+}
+
+main {
+    width: 100%;
+}
+
+main .accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.accordion .card {
+    margin: 0;
+}
+
+
+.card { /*cartões*/
+    width: 80px;
+    min-height: 300px;
+    transition: 1s ease-out;
+}
+
+.card:hover {
+    width: 50rem;
+    height: auto;
+}
+
+.card img {
+    width: 0;
+}
+
+.card:hover img {
+    width: 100%;
+}
+
+.card .card-body {
+    width: 80px;
+}
+
+.card:hover .card-body {
+    width: 100%;
+}
+
+
+.card .card-title { /*titulos caartões*/
+    font-size: 1.5rem;
+    transform: rotate(90deg);
+    white-space: nowrap;
+    width: 100%;
+    color: blue;
+}
+
+.card:hover .card-title {
+    font-size: 1.25rem;
+    transform: rotate(0deg);
+}
+
+.card .card-text { 
+    font-size: 0;
+    transition: 0 ease-out;
+    color: whitesmoke;
+}
+
+
+.card:hover .card-text {
+    font-size: 1rem;
+    transition: 0.5s ease-out;
+}
+
+
+
+
+
+
+/* tile 1.5rm */
